@@ -94,7 +94,8 @@ if __name__ == "__main__":
     test()
 
 
-
+#alternative solution:
+'''
 
 def parse_file(datafile):
     workbook = xlrd.open_workbook(datafile)
@@ -122,3 +123,4 @@ def save_file(data, filename):
         for s in data:
             year, month, day, hour, _ , _= data[s]["maxtime"]
             w.writerow([s, year, month, day, hour, data[s]["maxval"]])
+'''
